@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hill Climber Interface</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Messages et résultats du HillClimber...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="ButtonsLayout">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_lanceHC">
+          <property name="text">
+           <string>Lance HC</string>
+          </property>
+          <property name="toolTip">
+           <string>Lance le Hill Climber pour le problème sélectionné</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_lanceScilab">
+          <property name="text">
+           <string>Lance Scilab</string>
+          </property>
+          <property name="toolTip">
+           <string>Lance le modèle Scilab pour validation</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_runGridSearch">
+          <property name="text">
+           <string>Run Grid Search</string>
+          </property>
+          <property name="toolTip">
+           <string>Effectue une recherche de grille pour optimiser les hyperparamètres du Hill Climber</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_runMultiple">
+          <property name="text">
+           <string>Run Multiple</string>
+          </property>
+          <property name="toolTip">
+           <string>Lance plusieurs exécutions du Hill Climber pour le problème sélectionné</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_NRPB">
+          <property name="toolTip">
+           <string>Sélectionnez le problème à résoudre</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>NRPB 0 - Optimisation-Simulation</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NRPB 1 - Fonction Sinus</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NRPB 2 - Fonction avec Plateaux</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+</ui>
